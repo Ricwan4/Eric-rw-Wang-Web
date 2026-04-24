@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Eric Wang - Cognitive Neuroscientist </title>
+    <meta
+      name="description"
+      content="My name is Eric (Rui-Wen) Wang, I'm a cognitive neuroscienists!"
+    />
+
+    <link rel="icon" type="image/png" href="/icon/32x32.png" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/180x180.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Eric Wang - Cognitive Neuroscientist"
+    />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="theme-color" content="#f6d4b1" />
+
+    <meta property="og:title" content="Eric Wang - Cognitive Neuroscientist" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ericwang.dev/" />
+    <meta property="og:image" content="https://ericwang.dev/icon/og-img1.png" />
+    <meta
+      name="og:description"
+      content="My name is Eric (Rui-Wen) Wang, I'm a cognitive neuroscienists!"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+
+  <body>
+    <div id="home"></div>
+
+    <canvas class="webgl"></canvas>
+
+    <div id="hero-backup">
+      <h3>Hi there, I'm</h3>
+      <h1>Eric (Rui-Wen) Wang</h1>
+      <ul>
+        <li>Cognitive Neuroscientist</li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="menu-btn">
+        <button class="btn" onclick="toggleMenu()">
+          <svg width="16" height="16">
+            <rect class="st0" width="16" height="3.2" />
+            <rect y="6.4" class="st0" width="16" height="3.2" />
+            <rect y="12.8" class="st0" width="16" height="3.2" />
+          </svg>
+        </button>
+        <div style="display: flex">
+            <a
+            class="btn"
+            href="https://scholar.google.com/citations?user=qyjFxHsAAAAJ&hl=en"
+            target="_blank"
+            style="font-size: 0.75rem; padding: 8px; padding-left: 10px"
+          >
+            <svg width="16" height="16">
+              <path d="M12.854 1.146a.5.5 0 0 0-.708 0L10.5 2.793 13.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-2-2zM13.207 6.207L10.5 3.5 3.854 10.146a.5.5 0 0 0-.146.354v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .354-.146l6.645-6.647zM4.5 11.793V12.5h.707l6.147-6.147-.707-.707L4.5 11.793z" 
+              fill="currentColor"/>
+            </svg>
+            Pub
+          </a>
+          <a
+            class="btn"
+            href="/src/assets/cv/Eric_Wang_CV.pdf"
+            target="_blank"
+            style="font-size: 0.75rem; padding: 8px; padding-left: 10px"
+          >
+            <svg width="16" height="16">
+              <path d="M13,1H3C2.4,1,2,1.4,2,2v12c0,0.6,0.4,1,1,1h10c0.6,0,1-0.4,1-1V2C14,1.4,13.6,1,13,1z M12,13H4V3h8V13z"/>
+              <rect x="5" y="5" width="6" height="1"/>
+              <rect x="5" y="7" width="6" height="1"/>
+              <rect x="5" y="9" width="4" height="1"/>
+            </svg>
+            CV
+          </a>
+          
+          <a
+            class="btn"
+            href="https://bsky.app/profile/neuro-psyc-eric.bsky.social"
+            target="_blank"
+            style="font-size: 0.75rem; padding: 8px; padding-left: 10px"
+          >
+            <svg viewBox="0 0 64 57" width="16" height="14.25">
+              <path
+                d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"
+              ></path>
+            </svg>
+              Bluesky
+          </a>
+
+          <a
+            class="btn"
+            href="https://github.com/Ricwan4"
+            target="_blank"
+            style="font-size: 0.75rem; padding: 8px; padding-left: 10px"
+          >
+            <svg width="16" height="16">
+              <path
+                d="M10.6,12.9c0-1-0.3-1.6-0.7-2c2.4-0.3,4.9-1.1,4.9-5.2c0-1.1-0.4-2.1-1.1-2.9c0.1-0.3,0.5-1.3-0.1-2.8
+                c0,0-0.9-0.3-3,1.1c-1.7-0.5-3.6-0.5-5.4,0c-2-1.4-3-1.1-3-1.1C1.6,1.4,2,2.5,2.1,2.8C1.4,3.5,1,4.6,1,5.6c0,4.1,2.5,5,4.9,5.3
+                c-0.4,0.4-0.6,0.9-0.7,1.4c-0.6,0.3-2.2,0.7-3.1-0.9c0,0-0.6-1-1.6-1.1c0,0-1.1,0-0.1,0.7c0,0,0.7,0.3,1.1,1.6c0,0,0.6,2.1,3.6,1.5
+                c0,0.9,0,1.8,0,1.8h5.3C10.6,15.9,10.6,14.4,10.6,12.9z"
+              />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-body" onclick="closeMenu()">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#aboutMe" onclick="closeMenu()">About</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
+      </div>
+
+      <div id="tip-scroll">Scroll &#8595;</div>
+    </nav>
+
+    <main id="content-root">
+  </main> 
+
+    <input type="text" id="textarea" readonly />
+    
+    <div id="loading">
+      <h2>Booting...</h2>
+      <div id="loading-bar">
+        <div id="loading-bar-progress"></div>
+      </div>
+      <div id="loading-items">Starting...</div>
+    </div>
+
+    <footer>
+      <div>
+        This website was forked from Ed Hinrichsen. The original website can be found
+        <a href="https://edwardhinrichsen.com" target="_blank">
+          <u>here.</u>
+        </a>
+      </div>
+      <div>COPYRIGHT © 2026 Eric Wang.</div>
+    </footer>
+
+    <script>
+      function closeMenu() {
+        document.getElementsByTagName("nav")[0].classList.remove(["active"]);
+      }
+
+      function toggleMenu() {
+        const nav = document.getElementsByTagName("nav")[0];
+        if (nav.classList.contains("active")) {
+          nav.classList.remove(["active"]);
+        } else {
+          nav.classList.add("active");
+        }
+      }
+    </script>
+    <script
+      fetchpriority="high"
+      src="https://cdn-ts.netlify.app/webgl-helper@3.0.11/webgl-helper.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EDNKHGV4HB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-EDNKHGV4HB");
+      gtag("event", "origin", { name: window.origin });
+    </script>
+  </body>
+</html>
