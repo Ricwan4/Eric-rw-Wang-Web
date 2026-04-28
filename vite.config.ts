@@ -3,7 +3,7 @@ import checker from "vite-plugin-checker";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./", 
+  base: "/Ricwan4.github/", 
   plugins: [checker({ typescript: true })],
   worker: {},
   build: {
