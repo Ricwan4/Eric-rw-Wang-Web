@@ -1,4 +1,4 @@
-!(/images/Eric.png?aspect=2&noflow=true&width=1.6)
+!(images/Eric.png?aspect=2&noflow=true&width=1.6)
 
 
 ##   Hi there, 
