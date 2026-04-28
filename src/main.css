@@ -267,9 +267,11 @@ footer {
 a {
   display: inline-block;
   color: inherit;
-  text-decoration-style: solid;
+  text-decoration-style: none;
   text-decoration-thickness: 2px;
   transition: all 0.3s;
+  color: #ee2400;
+
 }
 a:hover {
   transform: scale(1.1);
@@ -308,6 +310,12 @@ a:active {
   box-shadow: 4px 4px 0px rgba(82, 82, 82, 0.4);
 }
 
+.btn[collapsed="false"] {
+    background-color: #888888 !important; /* 目标灰色 */
+    color: #f6d4b1; 
+    box-shadow: 2px 2px 0px rgba(82, 82, 82, 0.4);
+    transform: scale(0.98);
+}
 .portrait {
   position: relative;
   width: clamp(0px, 95vw, 780px);
@@ -378,7 +386,7 @@ a:active {
 .collapse-btn {
     display: block;
     margin: 16px auto;
-    background-color: #104e4a;
+    background-color:#ee2400;
 }
 
 /* News section specific styles */
@@ -431,4 +439,9 @@ a:active {
   color: var(--color);
   text-decoration: none;
   transform: scale(1.05);
+}
+
+b, strong {
+  color: #ee2400;
+  transition: color 0.3s ease; 
 }
