@@ -222,6 +222,20 @@ p {
   box-shadow: 1px 1px 0px #f6d4b1, 6px 6px 0px rgba(82, 82, 82, 0.25);
 }
 
+.project-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px auto;
+}
+
+.project-img img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 600px;
+}
+
 main {
   color: var(--color);
   margin-top: 200vh;
@@ -262,6 +276,20 @@ footer {
   color: var(--color);
   z-index: 2;
   position: relative;
+}
+
+footer .visitor-map {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  transform: scale(0.6);
+  transform-origin: top center;
+  margin-bottom: -80px;
+}
+
+footer .visitor-map iframe {
+  width: 100% !important;
+  max-width: 100%;
 }
 
 a {
